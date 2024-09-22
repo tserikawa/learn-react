@@ -1,6 +1,22 @@
-export default function Avatar(): JSX.Element {
-  const avater: string = "https://i.imgur.com/7vQD0fPs.jpg";
-  const description: string = "Gregorio Y. Zara";
+import { Person } from "../types/Person";
+import { getImageUrl } from "../utils/ImageUrl";
 
-  return <img className="avatar" src={avater} alt={description} />;
+type AvatarProps = {
+  person: Person;
+  size: number;
+};
+
+export default function Avatar({
+  person,
+  size = 100,
+}: AvatarProps): JSX.Element {
+  return (
+    <img
+      className="avatar"
+      src={getImageUrl(person)}
+      alt={person.name}
+      width={size}
+      height={size}
+    />
+  );
 }

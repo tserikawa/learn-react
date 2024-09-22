@@ -8,11 +8,11 @@ import TodoList from "./components/TodoList";
 function App(): JSX.Element {
   return (
     <div>
-      <Gallery />
+      {/* <Gallery /> */}
       <Profile />
-      <Bio />
-      <Avatar />
-      <TodoList />
+      {/* <Bio /> */}
+      {/* <Avatar /> */}
+      {/* <TodoList /> */}
     </div>
   );
 }
