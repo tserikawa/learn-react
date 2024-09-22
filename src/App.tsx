@@ -1,25 +1,9 @@
 import "./App.css";
 import Gallery from "./components/Gallery";
 import Profile from "./components/Profile";
-
-function Bio(): JSX.Element {
-  return (
-    <div>
-      <div className="intro">
-        <h1>Welcome to my website!</h1>
-      </div>
-      <p className="summary">
-        You can find my thoughts here.
-        <br />
-        <br />
-        <b>
-          And <i>pictures</i>
-        </b>{" "}
-        of scientists!
-      </p>
-    </div>
-  );
-}
+import Avatar from "./components/Avatar";
+import Bio from "./components/Bio";
+import TodoList from "./components/TodoList";
 
 function App(): JSX.Element {
   return (
@@ -27,6 +11,8 @@ function App(): JSX.Element {
       <Gallery />
       <Profile />
       <Bio />
+      <Avatar />
+      <TodoList />
     </div>
   );
 }
